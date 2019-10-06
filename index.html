@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMI Calculator</title>
+	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<h1>BMI Calculator</h1>
+	<div class="content">
+		<div class="container">
+			<div class="slidecontainer">
+				<h3>Height <span id="height_imperial"></span><span id="height"></span></h3>
+				<input type="range" min="125" max="200" value="170" step="1" class="slides" id="slider1">
+			</div>
+			<div class="slidecontainer">
+				<h3>Weight <span id="weight_imperial"></span><span id="weight"></span></h3>
+				<input type="range" min="35" max="150" value="70" step="1" class="slides" id="slider2">
+			</div>
+		</div>
+		<div class="container">
+			<table>
+				<tbody>
+					<tr>
+						<td>BMI</td>
+						<td><span id="bmi"></span></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><span id="level"></span></td>
+					</tr>					
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
